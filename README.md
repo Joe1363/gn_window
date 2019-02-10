@@ -24,7 +24,7 @@ gnWindow.remove();
 
 ## Parameter Options
 
-#### content - String/JSON or Object/Hash
+### content - String/JSON or Object/Hash
 Loads and/or displays window content.
 The content parameter takes either a string or an object
 
@@ -51,13 +51,13 @@ gnWindow.open({ content: {url: "/url_for_basic"} })
 gnWindow.open({ content: {url: "/url_with_options", data: {id: 1}, type: "POST"} })
 ```
 
-#### fadeIn - Integer
+### fadeIn - Integer
 Fade in time in milliseconds. Uses jQuery fadeIn function. Defaults to 'fast'.
 ```
 gnWindow.open({ fadeIn: 500 })
 ```
 
-#### contentTimeout - Integer or String
+### contentTimeout - Integer or String
 Sets timeout duration for displaying page content.
 A short timeout of is provided by default so that loading image and text is seen before content is displayed. The timeout length can be changed by providing an integer (milliseconds) or skipped string 'none' is provided.
 ```
@@ -65,20 +65,20 @@ gnWindow.open({ contentTimeout: 1000 });
 gnWindow.open({ contentTimeout: 'none' });
 ```
 
-#### fixedWidth and fixedHeight - String
+## fixedWidth and fixedHeight - String
 Add fixed height or width to window. Default width can be changed in CSS.
 ```
 gnWindow.open({ fixedWidth: '720px' })
 gnWindow.open({ fixedheight: '60vh' })
 gnWindow.open({ fixedWidth: '400px', fixedheight: '400px' })
 ```
-#### loadingText - String
+### loadingText - String
 Provide text to be displayed above loading icon. Will use default if not provided.
 ```
 gnWindow.open({ loadingText: 'In Progress...' });
 ```
 
-#### overlayClose - Boolean
+### overlayClose - Boolean
 If set to true, window will close when background overlay is clicked. Will use default if not provided.
 ```
 gnWindow.open({ overlayClose: true });
