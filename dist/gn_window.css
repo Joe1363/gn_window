@@ -1,0 +1,11 @@
+/** gnWindow (v1.0.0) - Copyright 2019 Joseph Cabral - Licensed under MIT
+   Docs: https://github.com/Joe1363/gn_window
+**/
+#gnWindow { width: 800px;  left: 0;  max-width: 100vw;  margin: 1vh auto;  position: fixed;  border: 1px solid black;  z-index: 1000;  background-color: #fff;  display: none;  top: 0;  right: 0; }
+#gnwContent { overflow-y: auto;  max-height: 98vh; }
+#gnWindowOverlay { width: 100%;  height: 100%;  display: none;  top: 0;  right: 0;  bottom: 0;  left: 0;  position: fixed;  z-index: 1000;  background-color: rgba(0, 0, 0, .5); }
+#gnClose { position: absolute;  top: 2px;  right: 15px;  cursor: pointer;  z-index: 1001;  opacity: .88; }
+#gnClose:hover { opacity: 1; }
+.gnwNoScroll { overflow: hidden; }
+#gnwLoading { height: 100%;  padding: 20% 0;  width: 100%;  text-align: center; }
+#gnwLoading p { font-size: 24px; }
