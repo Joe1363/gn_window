@@ -65,7 +65,7 @@ gnWindow.open({ contentTimeout: 1000 });
 gnWindow.open({ contentTimeout: 'none' });
 ```
 
-## fixedWidth and fixedHeight - String
+### fixedWidth and fixedHeight - String
 Add fixed height or width to window. Default width can be changed in CSS.
 ```
 gnWindow.open({ fixedWidth: '720px' })
